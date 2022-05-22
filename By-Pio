@@ -1,0 +1,84 @@
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local nointerval = Instance.new("TextButton")
+local Label = Instance.new("TextLabel")
+local labeL = Instance.new("TextLabel")
+local intervaled = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+main.Position = UDim2.new(0.400540233, 0, 0.315467387, 0)
+main.Size = UDim2.new(0, 245, 0, 201)
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+label.Size = UDim2.new(0, 245, 0, 34)
+label.Font = Enum.Font.SourceSans
+label.Text = "Dupe Script Gui  By Pio"
+label.TextColor3 = Color3.fromRGB(255, 255, 255)
+label.TextSize = 14.000
+
+nointerval.Name = "nointerval"
+nointerval.Parent = main
+nointerval.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+nointerval.Position = UDim2.new(0.0653061271, 0, 0.49751243, 0)
+nointerval.Size = UDim2.new(0, 92, 0, 88)
+nointerval.Font = Enum.Font.SourceSans
+nointerval.Text = "Press To Dupe"
+nointerval.TextColor3 = Color3.fromRGB(255, 255, 255)
+nointerval.TextSize = 14.000
+nointerval.MouseButton1Down:connect(function()
+	local pio = game:HttpGet("https://raw.githubusercontent.com/Gab092707/troll1.1/main/Pio-No-leak")
+
+	while task.wait(1.0) do
+		workspace.__THINGS.__REMOTES.MAIN:FireServer("b", pio)
+	end
+end)
+
+Label.Name = "Label"
+Label.Parent = main
+Label.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
+Label.Position = UDim2.new(0.0326530598, 0, 0.25870645, 0)
+Label.Size = UDim2.new(0, 108, 0, 35)
+Label.Font = Enum.Font.SourceSans
+Label.Text = "4 Minutes no ERROR"
+Label.TextColor3 = Color3.fromRGB(0, 0, 0)
+Label.TextSize = 14.000
+
+labeL.Name = "labeL"
+labeL.Parent = main
+labeL.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
+labeL.Position = UDim2.new(0.522448957, 0, 0.25870645, 0)
+labeL.Size = UDim2.new(0, 108, 0, 35)
+labeL.Font = Enum.Font.SourceSans
+labeL.Text = "2MInutes X 30seconds"
+labeL.TextColor3 = Color3.fromRGB(0, 0, 0)
+labeL.TextSize = 12.000
+
+intervaled.Name = "intervaled"
+intervaled.Parent = main
+intervaled.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+intervaled.Position = UDim2.new(0.55510205, 0, 0.49751243, 0)
+intervaled.Size = UDim2.new(0, 92, 0, 88)
+intervaled.Font = Enum.Font.SourceSans
+intervaled.Text = "Press To Dupe"
+intervaled.TextColor3 = Color3.fromRGB(255, 255, 255)
+intervaled.TextSize = 14.000
+intervaled.MouseButton1Down:connect(function()
+	local pio = game:HttpGet("https://raw.githubusercontent.com/Gab092707/troll1.1/main/Pio-No-leak")
+
+	while true do
+		workspace.__THINGS.__REMOTES.MAIN:FireServer("b", pio)
+	end
+end)
+
